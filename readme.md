@@ -2,19 +2,20 @@
 
 ## 一、文件说明
 
+```
 HMM_pinyin
 
 └── corpus // 语料
 
 └── params // 模型参数
 
-​		└── init_prob.json // 初始概率矩阵
+		└── init_prob.json // 初始概率矩阵
 
-​		└── emiss_prob.json // 发射概率矩阵
+		└── emiss_prob.json // 发射概率矩阵
 
-​		└── trans_prob.json // 转移概率矩阵
+		└── trans_prob.json // 转移概率矩阵
 
-​		└── pinyin_states.json // 同音字记录 
+		└── pinyin_states.json // 同音字记录 
 
 └──  preprocessing.py // 预处理语料的脚本，用于过滤杂乱字符
 
@@ -35,6 +36,7 @@ HMM_pinyin
 └── readme.md
 
 └── readme.pdf
+```
 
 ## 二、功能简介
 
