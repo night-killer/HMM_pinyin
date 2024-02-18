@@ -53,6 +53,7 @@ HMM_pinyin
 ### 4.1、HMM模型
 
 1. 马尔可夫性可描述为
+
    $$
    \forall h,s\le t,\mathrm{P}(X(t+h)=y|X(s)=x(s))=\mathrm{P}(X(t+h)=y|X(t)=x(t))
    $$
@@ -68,6 +69,7 @@ HMM_pinyin
 ### 4.2、viterbi算法
 
 1. 初始化：
+   
    $$
    \delta_1(i)=\pi_ib_i(o_1),1\le i\le N
    $$
@@ -77,6 +79,7 @@ HMM_pinyin
    $$
 
 2. 迭代求解：
+ 
    $$
    \delta_t(j)=\mathrm{max}_{1\le i\le N}\delta_{t-1}(i)a_{ij}b_j(o_t)
    $$
@@ -86,6 +89,7 @@ HMM_pinyin
    $$
 
 3. 终止：
+ 
    $$
    \mathrm{P^*}=\mathrm{max}_{1\le i\le N}\delta_T(i)
    $$
@@ -95,6 +99,7 @@ HMM_pinyin
    $$
 
 4. 最优路径（隐状态序列）回溯：
+
    $$
    q_t^*=\Phi_{t+1}(q_{t+1}^*),t=T-1,T-2,...,2,1
    $$
